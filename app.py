@@ -1264,12 +1264,13 @@ def main() -> None:
         page_icon="🗺️",
         layout="wide",
     )
-    st.title("Drought Impact Demo (2018–2020)")
+    st.title("Drought Impact Demo (2018–2020) [work in progress]")
 
     with st.sidebar:
         viewer_mode = st.radio(
             "Viewer mode",
             [MODE_POINT, MODE_NUTS3],
+            index=1,
             horizontal=True,
         )
         st.markdown("---")
