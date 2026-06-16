@@ -1,0 +1,88 @@
+{
+  "generated_at": "2026-06-16T14:28:45.504292+00:00",
+  "year_range": {
+    "start": "2018-01-01",
+    "end": "2020-12-31"
+  },
+  "dry_run": false,
+  "include_wildfires": true,
+  "text_redaction": {
+    "applied": true,
+    "placeholder": "Artikel niet vrijgegeven vanwege auteursrecht.",
+    "fields": [
+      "text_content",
+      "features.clean_text"
+    ]
+  },
+  "sources": {
+    "nuts3_csv": "C:\\Users\\hoeven\\Downloads\\Modulaire drought impact location classifier\\Thesis specific chapters\\chapter 6 geocoding\\NUTS-3-Coder\\filtered_articles_with_llm_features_gemini_gemini-3.5-flash_FULL_nuts3.csv",
+    "nuts3_json": "C:\\Users\\hoeven\\Downloads\\Modulaire drought impact location classifier\\Thesis specific chapters\\chapter 6 geocoding\\NUTS-3-Coder\\filtered_articles_with_llm_features_gemini_gemini-3.5-flash_FULL_nuts3.json",
+    "geocoded_csv": "C:\\Users\\hoeven\\Downloads\\Modulaire drought impact location classifier\\Thesis specific chapters\\chapter 6 geocoding\\point-coder\\filtered_articles_with_llm_features_gemini_gemini-3.5-flash_FULL_geocoded.csv",
+    "geocoded_json": "C:\\Users\\hoeven\\Downloads\\Modulaire drought impact location classifier\\Thesis specific chapters\\chapter 6 geocoding\\point-coder\\filtered_articles_with_llm_features_gemini_gemini-3.5-flash_FULL_geocoded.json",
+    "geojson": "C:\\Users\\hoeven\\Downloads\\Modulaire drought impact location classifier\\Thesis specific chapters\\chapter 6 geocoding\\NUTS-3-Coder\\data\\geo\\nuts_nl_simplified.geojson",
+    "wildfire_csv": "C:\\Users\\hoeven\\Downloads\\Modulaire drought impact location classifier\\Thesis specific chapters\\chapter 6 geocoding\\Data\\forest Fire\\wildfires_2km_2018_2020.csv"
+  },
+  "outputs": {
+    "drought_impacts_nuts3.csv": {
+      "input_rows": 14858,
+      "output_rows": 14858,
+      "year_counts": {
+        "2018": 5097,
+        "2019": 3959,
+        "2020": 5802
+      },
+      "path": "C:\\Users\\hoeven\\Downloads\\Modulaire drought impact location classifier\\Demo-development\\Demo-Data\\impacts\\drought_impacts_nuts3.csv"
+    },
+    "drought_impacts_geocoded.csv": {
+      "input_rows": 11417,
+      "output_rows": 11417,
+      "year_counts": {
+        "2018": 4030,
+        "2019": 3193,
+        "2020": 4194
+      },
+      "path": "C:\\Users\\hoeven\\Downloads\\Modulaire drought impact location classifier\\Demo-development\\Demo-Data\\impacts\\drought_impacts_geocoded.csv"
+    },
+    "drought_impacts_nuts3.json": {
+      "input_articles": 5160,
+      "output_articles": 5160,
+      "year_counts": {
+        "2018": 1607,
+        "2019": 1550,
+        "2020": 2003
+      },
+      "path": "C:\\Users\\hoeven\\Downloads\\Modulaire drought impact location classifier\\Demo-development\\Demo-Data\\articles\\drought_impacts_nuts3.json",
+      "text_redacted": true
+    },
+    "drought_impacts_geocoded.json": {
+      "input_articles": 5160,
+      "output_articles": 5160,
+      "year_counts": {
+        "2018": 1607,
+        "2019": 1550,
+        "2020": 2003
+      },
+      "path": "C:\\Users\\hoeven\\Downloads\\Modulaire drought impact location classifier\\Demo-development\\Demo-Data\\articles\\drought_impacts_geocoded.json",
+      "text_redacted": true
+    },
+    "nuts_nl_simplified.geojson": {
+      "path": "C:\\Users\\hoeven\\Downloads\\Modulaire drought impact location classifier\\Demo-development\\Demo-Data\\geo\\nuts_nl_simplified.geojson",
+      "bytes": 235840
+    },
+    "wildfires_2018_2020.csv": {
+      "path": "C:\\Users\\hoeven\\Downloads\\Modulaire drought impact location classifier\\Demo-development\\Demo-Data\\wildfire\\wildfires_2018_2020.csv",
+      "source": "C:\\Users\\hoeven\\Downloads\\Modulaire drought impact location classifier\\Thesis specific chapters\\chapter 6 geocoding\\Data\\forest Fire\\wildfires_2km_2018_2020.csv",
+      "input_rows": 1116072,
+      "output_rows": 1773,
+      "columns_kept": [
+        "x",
+        "y",
+        "time",
+        "wildfires_sum"
+      ],
+      "bytes_before": 714921352,
+      "bytes_after": 60157
+    }
+  },
+  "total_bytes": 42365205
+}
